@@ -180,15 +180,6 @@ body{
     line-height: var(--tst-body-line-height);
 }
 
-.tst_container{
-    width: var(--tst-container-width);
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 50px 0 0;
-    display: flex;
-    position: relative;
-}
-
 .tst_topnav{
     width: 100vw;
     height: 50px;
@@ -210,4 +201,21 @@ body{
 
 .tst_topnav .tst_wrapper ul li{
     margin: 0 10px;
+}
+
+.tst_container{
+    width: var(--tst-container-width);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 50px 0 0;
+}
+
+.tst_container .tst_leftnav{
+    width: 230px;
+    flex: 0 0 auto;
+}
+
+.tst_container .tst_contents{
+    width: 1370px;
+    flex: 0 0 auto;
 }
