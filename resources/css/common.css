@@ -24,7 +24,7 @@
     --tst-body-font-weight: 400;
     --tst-body-line-height: 1.6;
     --tst-body-color: #2e3846;
-    --tst-body-bg: #f8f9fa;
+    --tst-body-bg: #e1e4ea;
     --tst-heading-color: inherit;
     --tst-link-color: inherit;
     --tst-link-decoration: none;
@@ -159,9 +159,16 @@ html{
 .list_no_desc li{
     list-style-type: none;
 }
-.list_inline li{
+
+.list_no_desc.list_inline li{
     display: inline-block;
     margin: 0 5px;
+    padding: 0;
+}
+
+.list_no_desc.list_block li{
+    display: block;
+    margin: 0 0 0 -36px;
     padding: 0;
 }
 
@@ -207,15 +214,32 @@ body{
     width: var(--tst-container-width);
     min-height: 100vh;
     margin: 0 auto;
-    padding: 50px 0 0;
+    padding: 50px 200px 0;
 }
 
 .tst_container .tst_leftnav{
-    width: 230px;
-    flex: 0 0 auto;
+    width: 200px;
+    background-color: var(--tst-white);
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.tst_container .tst_leftnav,
+.tst_container .tst_leftnav > *{
+    display: block;
+}
+
+.tst_container .tst_leftnav ul li{
+    padding: 12px 0;
+    display: block;
+    font-size: 12px;
+    font-weight: medium;
 }
 
 .tst_container .tst_contents{
     width: 1370px;
-    flex: 0 0 auto;
+    background-color: var(--tst-white);
 }
