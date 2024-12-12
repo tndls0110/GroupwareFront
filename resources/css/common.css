@@ -20,7 +20,7 @@
     --tst-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --tst-container-width: 1600px;
     --tst-body-font-family: var(--tst-font-sans-serif);
-    --tst-body-font-size: 0.9rem;
+    --tst-body-font-size: 12px;
     --tst-body-font-weight: 400;
     --tst-body-line-height: 1.6;
     --tst-body-color: #2e3846;
@@ -174,8 +174,8 @@ h3{
 }
 
 p{
-    font-size: 13px;
-    font-weight: 400;
+    font-size: var(--tst-body-font-size);
+    font-weight: 500;
 }
 
 p.min{
@@ -200,4 +200,18 @@ p.min{
     display: block;
     margin: 0 0 0 -36px;
     padding: 0;
+}
+
+
+
+/* input */
+
+
+
+
+
+/* button */
+
+.tst_pointer{
+    cursor: pointer;
 }
