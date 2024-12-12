@@ -2,3 +2,212 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+
+
+/* variations */
+
+:root {
+    --tst-white: #fff;
+    --tst-dark: #2e3846;
+    --tst-medium: #778495;
+    --tst-subtle: #e1e4ea;
+    --tst-gray: #c4c4c4;
+    --tst-success: #416a9c;
+    --tst-warning: #f44336;
+    --tst-info: #bccee4;
+    --tst-font-sans-serif: "Noto Sans KR", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --tst-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --tst-container-width: 1600px;
+    --tst-body-font-family: var(--tst-font-sans-serif);
+    --tst-body-font-size: 0.9rem;
+    --tst-body-font-weight: 400;
+    --tst-body-line-height: 1.6;
+    --tst-body-color: #2e3846;
+    --tst-body-bg: #f8f9fa;
+    --tst-heading-color: inherit;
+    --tst-link-color: inherit;
+    --tst-link-decoration: none;
+    --tst-link-hover-color: inherit;
+    --tst-link-hover-decoration: underline;
+    --tst-highlight-color: #fff;
+    --tst-highlight-bg: #778495;
+    --tst-border-width: 1px;
+    --tst-border-style: solid;
+    --tst-border-color: #e1e4ea;
+    --tst-border-radius: 0.375rem;
+    --tst-border-radius-sm: 0.25rem;
+    --tst-border-radius-lg: 0.5rem;
+    --tst-border-radius-xl: 1rem;
+    --tst-border-radius-xxl: 2rem;
+    --tst-border-radius-2xl: var(--tst-border-radius-xxl);
+    --tst-border-radius-pill: 50rem;
+    --tst-form-valid-color: #2e3846;
+    --tst-form-valid-border-color: #416a9c;
+    --tst-form-invalid-color: #2e3846;
+    --tst-form-invalid-border-color: #f44336;
+  }
+
+
+
+/* box-sizing */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+
+/* flex */
+
+.tst_flex{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.tst_flex .tst_flex_width10,
+.tst_flex .tst_flex_width20,
+.tst_flex .tst_flex_width30,
+.tst_flex .tst_flex_width40,
+.tst_flex .tst_flex_width50,
+.tst_flex .tst_flex_width60,
+.tst_flex .tst_flex_width70,
+.tst_flex .tst_flex_width80,
+.tst_flex .tst_flex_width90,
+.tst_flex .tst_flex_width100{
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+}
+
+.tst_flex .tst_flex_width10{
+    width: 10%;
+}
+
+.tst_flex .tst_flex_width20{
+    width: 20%;
+}
+
+.tst_flex .tst_flex_width30{
+    width: 30%;
+}
+
+.tst_flex .tst_flex_width40{
+    width: 40%;
+}
+
+.tst_flex .tst_flex_width50{
+    width: 50%;
+}
+
+.tst_flex .tst_flex_width60{
+    width: 60%;
+}
+
+.tst_flex .tst_flex_width70{
+    width: 70%;
+}
+
+.tst_flex .tst_flex_width80{
+    width: 80%;
+}
+
+.tst_flex .tst_flex_width90{
+    width: 90%;
+}
+
+.tst_flex .tst_flex_width100{
+    width: 100%;
+}
+
+
+
+/* display */
+
+.disp_hide{
+    display: none;
+}
+
+
+
+/* align */
+
+.align_left{
+    text-align: left;
+}
+
+.align_center{
+    text-align: center;
+}
+
+.align_right{
+    text-align: right;
+}
+
+.tst_flex.align_middle{
+    align-items: center;
+}
+
+
+
+/* list */
+
+.list_no_desc li{
+    list-style-type: none;
+}
+.list_inline li{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+
+
+/* layout */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--tst-body-bg);
+    color: var(--tst-body-color);
+    font-size: var(--tst-body-font-size);
+    font-weight: var(--tst-body-font-weight);
+	font-family: var(--tst-font-sans-serif);
+    line-height: var(--tst-body-line-height);
+}
+
+.tst_container{
+    width: var(--tst-container-width);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    display: flex;
+    position: relative;
+}
+
+.tst_topnav{
+    width: 100vw;
+    height: 50px;
+    padding: 0;
+    background-color: var(--tst-dark);
+    color: var(--tst-subtle);
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.tst_topnav .tst_wrapper{
+    width: var(--tst-container-width);
+    height: inherit;
+    margin: 0 auto;
+}
+
+.tst_topnav .tst_wrapper ul li{
+    margin: 0 10px;
+}
